@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+   <title>Search Job</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <meta name="robots" content="noindex, nofollow">
+   <style>
+    * {
+
+margin: 0px;
+
+padding: 0px;
+
+}
+
+html, body {
+
+font-family: 'Roboto', sans-serif, arial;
+
+font-size: 15px;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.header .logo {
+  font-size: 25px;
+  font-family: 'Sriracha', cursive;
+  color: #000;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+  padding: 35px 20px;
+}
+
+.container1 {
+
+width: 1170px;
+
+margin: 0px auto;
+
+}
+
+.width-100 {
+
+width: 100%;
+
+float: left;
+
+}
+
+.width-66 {
+
+width: 66%;
+
+float: left;
+
+}
+
+.width-50 {
+
+float: left;
+
+width: 50%;
+
+}
+
+.width-75 {
+
+width: 75%;
+
+float: left;
+
+}
+
+.width-33 {
+
+width: 33%;
+
+float: left;
+
+}
+
+.width-25 {
+
+width: 25%;
+
+float: left;
+
+}
+
+
+
+/*****HEADER SECTION*****/
+
+
+
+.header-menu {
+
+font-size: 40px;
+
+text-decoration: none;
+
+color: rgb(5, 103, 138);
+
+font-weight: 500;
+
+padding: 10px;
+
+}
+
+
+
+/*****BANNER SECTION*****/
+
+.banner-section {
+
+background-repeat: no-repeat;
+
+background-size: cover;
+
+text-align: center;
+
+height: 150px;
+
+position: relative;
+
+width: 100%;
+
+}
+
+.banner-heading {
+
+font-size: 40px;
+
+color: white;
+
+padding-top: 70px
+
+}
+
+.banner-para {
+
+font-size: 15px;
+
+color: #176B87;
+
+padding-top: 10px;
+
+}
+
+
+
+.search-sect {
+
+margin-top: 40px;
+
+width: 25%;
+
+float: left;
+
+position: relative;
+
+}
+
+.search-textbox {
+
+height: 40px;
+
+width: 90%;
+
+padding-left: 10px;
+
+border-top: none;
+
+border-bottom: none;
+
+border-color: #176B87;
+background-color: #f0f4f5;
+border-right: none;
+
+border-width: 1px;
+
+}
+
+.search-button {
+
+width: 100%;
+
+height: 40px;
+
+background-color: #053B50;
+
+border: none;
+
+color: white;
+
+}
+
+.search-sect .icons {
+
+position: absolute;
+
+top: 12px;
+
+right: 10px
+
+}
+
+
+body {
+
+font-family: Arial, sans-serif;
+
+}
+
+
+
+.container2 {
+display: flex;
+justify-content: space-between;
+
+}
+
+
+
+.filters {
+
+width: 50%;
+
+padding: 60px;
+
+background-color: #f0f3fa;
+
+}
+
+
+
+.filters h2 {
+
+margin-bottom: 20px;
+
+}
+
+
+
+.filters ul {
+
+list-style-type: none;
+
+padding: 0;
+
+}
+
+
+
+.filters li {
+
+margin-bottom: 10px;
+
+}
+
+
+
+.jobs {
+
+width: 80%;
+
+padding: 50px;
+
+}
+
+
+
+.job {
+select{
+  border:none;
+  padding: 10px 20px;
+  border-radius:10px;
+}
+
+select:focus{
+  outline:none;
+}
+margin-bottom: 30px;
+
+background-color: #ffffff;
+
+padding: 30px;
+
+border-radius: 10px;
+
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.job h3 {
+
+margin-bottom: 10px;
+
+}
+
+.job p {
+
+margin-bottom: 0;
+
+}
+
+.class1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; /* Add padding to space the columns */
+}
+
+/* Style the left and right content blocks */
+.left-class {
+  flex: 1;
+  margin-right: 10px; /* Add margin to create space between columns */
+}
+
+.right-class {
+    flex: 2;
+    margin-left: 10px; /* Add margin to create space between columns */
+}
+
+.recent-job {
+	padding-top: 30px;
+	background-color: #f0f3fa;
+	padding-bottom: 60px;
+}
+
+.recent-job-heading {
+	text-align: center;
+	color: #343a40;
+}
+
+.recent-job-sub-heading {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.recent-job-list {
+	float: left;
+	background-color: white;
+	padding: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+.job-title {
+	font-size: 20px;
+}
+
+.job-company {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.job-company i {
+	color: orange;
+	margin-left: 10px;
+}
+
+.job-skill {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.job-apply-button {
+	background: blue;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	float: right;
+}
+
+   </style>
+  </head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Job Genie</a>
+    <nav class="nav-items">
+        <a href="jobPage2.html">Jobs</a>
+        <a href="index.html" target="_self">Home</a>
+        <a href="courses.html">Courses</a>
+    </nav>
+  </header>
+
+  <!------SEARCH SECTION SEARCH SECTION SEARCH SECTION ------>
+
+  <div class="width-100 banner-section">
+    <div class="container1">
+      <div class="search-sect">
+        <input type="text" class="search-textbox" placeholder="Search Company">
+      </div>
+      <div class="search-sect">
+        <input type="text" class="search-textbox" placeholder="Select Location">
+        <i class="fa fa-life-ring icons" aria-hidden="true"></i>
+      </div>
+      <div class="search-sect">
+        <input type="text" class="search-textbox" placeholder="All categories">
+        <i class="fa fa-caret-down icons" aria-hidden="true"></i>
+      </div>
+
+      <div class="search-sect">
+        <button class="search-button">
+          <i class="fa fa-search " aria-hidden="true"></i> Search Here </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="class1">
+    <div class="left-class">
+      <div class="container2">
+        <div class="filters">
+            <h2 style="text-align:center">Filters</h2>
+            <div class="jobs">
+              <div class="job">
+                <h3>Occupation</h3>
+                <select name="Occupation" id="Occupation">
+                  <option value="Networking">Networking</option>
+                  <option value="Human Resources">Human Resources</option>
+                  <option value="Cloud Database">Cloud Database</option>
+                  <option value="Software Engineer">Software Engineer</option>
+                </select>
+              </div>
+    
+                <div class="job">
+    
+                    <h3>Internship type</h3>
+                    <select name="job type" id="job type">
+                      <option value="Full-Time">Full-Time</option>
+                      <option value="Part-time">Part-time</option>
+                      <option value="Fresher">Fresher</option>
+                      <option value="Temporary">Temporary</option>
+                      <option value="Permanent">Permanent</option>
+                    </select>
+                </div>
+    
+                <div class="job">
+                    <h3>Salary</h3>
+                    <select name="Salary" id="Salary">
+                    <option value="Salary5">No Stifend</option>
+                    <option value="Salary5">2k - 5k</option>
+                    <option value="Salary5">5k - 10k</option>
+                      <option value="Salary1">10K - 15k </option>
+                      <option value="Salary2">15k - 30</option>
+                      <option value="Salary3">30k - 50k</option>
+                      <option value="Salary4">50k - 80k</option>
+                    </select>
+                </div>
+    
+                <div class="job">
+                  <h3>Programming Language:</h3>
+                    <select name="language" id="language">
+                      <option value="javascript">JavaScript</option>
+                      <option value="python">Python</option>
+                      <option value="c++">C++</option>
+                      <option value="java">Java</option>
+                    </select>
+                </div>
+    
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-class">
+        <!-- Content for the right block goes here -->
+        <div class="width-100 recent-job">
+          <div class="container">
+            <h2 class="recent-job-heading">LIST OF ALL INTERNSHIPS</h2>
+            <br>
+            <!-----JOB LIST----->
+            <div class="width-50">
+              <div class="recent-job-list">
+                <div class="width-100">
+                  <h4 class="job-title">HTML Designer</h4>
+                  <p class="job-company">Dezven Software Solution <i class="fa fa-star" aria-hidden="true"></i> | 234 Reviews </p>
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i> 1 to 4 Years
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-inr" aria-hidden="true"></i> No disclosed
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> Pune
+                </div>
+                <div class="width-100">
+                  <p class="job-skill">
+                    <b>Skills : </b>HTML, CSS, JAVASCRIPT, JQUERY, BOOTSTRAP, PHOTOSHOP
+                  </p>
+                </div>
+                <div class="width-100">
+                  <a href="apply.html" target="_blank" class="job-apply-button">Apply Now</a>
+                </div>
+              </div>
+            </div>
+            <!-----JOB LIST------>
+            <div class="width-50">
+              <div class="recent-job-list">
+                <div class="width-100">
+                  <h4 class="job-title">CSS Designer</h4>
+                  <p class="job-company">Dezven Group <i class="fa fa-star" aria-hidden="true"></i> | 234 Reviews </p>
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i> 1 to 4 Years
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-inr" aria-hidden="true"></i> No disclosed
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> Pune
+                </div>
+                <div class="width-100">
+                  <p class="job-skill">
+                    <b>Skills : </b>HTML, CSS, JAVASCRIPT, JQUERY, BOOTSTRAP, PHOTOSHOP
+                  </p>
+                </div>
+                <div class="width-100">
+                  <a href="apply.html" target="_blank" class="job-apply-button">Apply Now</a>
+                </div>
+              </div>
+            </div>
+            <!-----JOB LIST----->
+            <div class="width-50">
+              <div class="recent-job-list">
+                <div class="width-100">
+                  <h4 class="job-title">Bootstrap Developer</h4>
+                  <p class="job-company">Apple Incorporation <i class="fa fa-star" aria-hidden="true"></i> | 234 Reviews </p>
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i> 1 to 4 Years
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-inr" aria-hidden="true"></i> No disclosed
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> Pune
+                </div>
+                <div class="width-100">
+                  <p class="job-skill">
+                    <b>Skills : </b>HTML, CSS, JAVASCRIPT, JQUERY, BOOTSTRAP, PHOTOSHOP
+                  </p>
+                </div>
+                <div class="width-100">
+                  <a href="apply.html" target="_blank" class="job-apply-button">Apply Now</a>
+                </div>
+              </div>
+            </div>
+            <!-----JOB LIST----->
+            <div class="width-50">
+              <div class="recent-job-list">
+                <div class="width-100">
+                  <h4 class="job-title">Javascript Developer</h4>
+                  <p class="job-company">Wipro Software Sol <i class="fa fa-star" aria-hidden="true"></i> | 234 Reviews </p>
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i> 1 to 4 Years
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-inr" aria-hidden="true"></i> No disclosed
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> Pune
+                </div>
+                <div class="width-100">
+                  <p class="job-skill">
+                    <b>Skills : </b>HTML, CSS, JAVASCRIPT, JQUERY, BOOTSTRAP, PHOTOSHOP
+                  </p>
+                </div>
+                <div class="width-100">
+                  <a href="apply.html" target="_blank" class="job-apply-button">Apply Now</a>
+                </div>
+              </div>
+            </div>
+            <!-----JOB LIST----->
+            <div class="width-50">
+              <div class="recent-job-list">
+                <div class="width-100">
+                  <h4 class="job-title">Graphic Designer</h4>
+                  <p class="job-company">Microsoft Solution INC <i class="fa fa-star" aria-hidden="true"></i> | 234 Reviews </p>
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i> 1 to 4 Years
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-inr" aria-hidden="true"></i> No disclosed
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> Pune
+                </div>
+                <div class="width-100">
+                  <p class="job-skill">
+                    <b>Skills : </b>HTML, CSS, JAVASCRIPT, JQUERY, BOOTSTRAP, PHOTOSHOP
+                  </p>
+                </div>
+                <div class="width-100">
+                  <a href="apply.html"target="_blank" class="job-apply-button">Apply Now</a>
+                </div>
+              </div>
+            </div>
+            <!-----JOB LIST------>
+            <div class="width-50">
+              <div class="recent-job-list">
+                <div class="width-100">
+                  <h4 class="job-title">jQuery Developer</h4>
+                  <p class="job-company">Google Corporation <i class="fa fa-star" aria-hidden="true"></i> | 234 Reviews </p>
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i> 1 to 4 Years
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-inr" aria-hidden="true"></i> No disclosed
+                </div>
+                <div class="width-33">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> Pune
+                </div>
+                <div class="width-100">
+                  <p class="job-skill">
+                    <b>Skills : </b>HTML, CSS, JAVASCRIPT, JQUERY, BOOTSTRAP, PHOTOSHOP
+                  </p>
+                </div>
+                <div class="width-100">
+                  <a href="apply.html" target="_blank" class="job-apply-button">Apply Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+  
+
+  
+
+</body>

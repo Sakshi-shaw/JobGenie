@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0b9;
+        }
+
+        .background-image {
+            background-image: url('laptop-macbook-computer-work.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #120869;
+        }
+
+        form {
+            margin: 10px 0;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f5f5f5;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #1b085f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #5c00b3;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 18px;
+        }
+
+        .checkbox-group label {
+            font-size: 16px;
+        }
+
+        .checkbox-group input {
+            width: auto;
+            margin-top: 0;
+        }
+
+        .disclaimer {
+            font-size: 12px;
+            color: #777;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <div class="container">
+            <h1>Apply Now</h1>
+            <form id="application-form">
+                <!-- ... (rest of the form code) ... -->
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="resume">Upload Resume/CV (PDF or Word):</label>
+                    <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="position">Position Applied For:</label>
+                    <input type="text" id="position" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="salary">Desired Salary:</label>
+                    <input type="text" id="salary" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="availability">Availability to Start:</label>
+                    <input type="text" id="availability" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="cover-letter">Cover Letter (Optional):</label>
+                    <textarea id="cover-letter" rows="4"></textarea>
+                </div>
+    
+                <div class="checkbox-group">
+                    <label for="agree">I Agree to the Terms and Conditions</label>
+                    <input type="checkbox" id="agree" required>
+                </div>
+    
+                <button type="submit">Submit Application</button>
+    
+                <p class="disclaimer">By submitting this application, you acknowledge that all information provided is accurate and complete to the best of your knowledge.</p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

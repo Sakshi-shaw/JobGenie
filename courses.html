@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+   <title>Search Job</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <meta name="robots" content="noindex, nofollow">
+   <style>
+    * {
+
+margin: 0px;
+
+padding: 0px;
+
+}
+
+html, body {
+
+font-family: 'Roboto', sans-serif, arial;
+
+font-size: 15px;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.header .logo {
+  font-size: 25px;
+  font-family: 'Sriracha', cursive;
+  color: #000;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+  padding: 35px 20px;
+}
+
+.container1 {
+
+width: 1170px;
+
+margin: 0px auto;
+
+}
+
+.width-100 {
+
+width: 100%;
+
+float: left;
+
+}
+
+.width-66 {
+
+width: 66%;
+
+float: left;
+
+}
+
+.width-50 {
+
+float: left;
+
+width: 50%;
+
+}
+
+.width-75 {
+
+width: 75%;
+
+float: left;
+
+}
+
+.width-33 {
+
+width: 33%;
+
+float: left;
+
+}
+
+.width-25 {
+
+width: 25%;
+
+float: left;
+
+}
+
+
+
+/*****HEADER SECTION*****/
+
+
+
+.header-menu {
+
+font-size: 40px;
+
+text-decoration: none;
+
+color: rgb(5, 103, 138);
+
+font-weight: 500;
+
+padding: 10px;
+
+}
+
+
+
+/*****BANNER SECTION*****/
+
+.banner-section {
+
+background-repeat: no-repeat;
+
+background-size: cover;
+
+text-align: center;
+
+height: 150px;
+
+position: relative;
+
+width: 100%;
+
+}
+
+.banner-heading {
+
+font-size: 40px;
+
+color: white;
+
+padding-top: 70px
+
+}
+
+.banner-para {
+
+font-size: 15px;
+
+color: #176B87;
+
+padding-top: 10px;
+
+}
+
+
+
+.search-sect {
+
+margin-top: 40px;
+
+width: 25%;
+
+float: left;
+
+position: relative;
+
+}
+
+.search-textbox {
+
+height: 40px;
+
+width: 90%;
+
+padding-left: 10px;
+
+border-top: none;
+
+border-bottom: none;
+
+border-color: #176B87;
+background-color: #f0f4f5;
+border-right: none;
+
+border-width: 1px;
+
+}
+
+.search-button {
+
+width: 100%;
+
+height: 40px;
+
+background-color: #053B50;
+
+border: none;
+
+color: white;
+
+}
+
+.search-sect .icons {
+
+position: absolute;
+
+top: 12px;
+
+right: 10px
+
+}
+
+
+body {
+
+font-family: Arial, sans-serif;
+
+}
+
+
+
+.container2 {
+display: flex;
+justify-content: space-between;
+
+}
+
+
+
+.filters {
+
+width: 50%;
+
+padding: 60px;
+
+background-color: #f0f3fa;
+
+}
+
+
+
+.filters h2 {
+
+margin-bottom: 20px;
+
+}
+
+
+
+.filters ul {
+
+list-style-type: none;
+
+padding: 0;
+
+}
+
+
+
+.filters li {
+
+margin-bottom: 10px;
+
+}
+
+
+
+.jobs {
+
+width: 80%;
+
+padding: 50px;
+
+}
+
+
+
+.job {
+select{
+  border:none;
+  padding: 10px 20px;
+  border-radius:10px;
+}
+
+select:focus{
+  outline:none;
+}
+margin-bottom: 30px;
+
+background-color: #ffffff;
+
+padding: 30px;
+
+border-radius: 10px;
+
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.job h3 {
+
+margin-bottom: 10px;
+
+}
+
+.job p {
+
+margin-bottom: 0;
+
+}
+
+.class1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; /* Add padding to space the columns */
+}
+
+/* Style the left and right content blocks */
+.left-class {
+  flex: 1;
+  margin-right: 10px; /* Add margin to create space between columns */
+}
+
+.right-class {
+    flex: 2;
+    margin-left: 10px; /* Add margin to create space between columns */
+}
+
+.recent-job {
+	padding-top: 30px;
+	background-color: #f0f3fa;
+	padding-bottom: 60px;
+}
+
+.recent-job-heading {
+	text-align: center;
+	color: #343a40;
+}
+
+.recent-job-sub-heading {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.recent-job-list {
+	float: left;
+	background-color: white;
+	padding: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+.job-title {
+	font-size: 20px;
+}
+
+.job-company {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.job-company i {
+	color: orange;
+	margin-left: 10px;
+}
+
+.job-skill {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.job-apply-button {
+	background: blue;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	float: right;
+}
+
+   </style>
+  </head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Job Genie</a>
+    <nav class="nav-items">
+        <a href="jobPage2.html">Jobs</a>
+        <a href="internships.html">Internships</a>
+        <a href="index.html" target="_self">Home</a>
+    </nav>
+  </header>
+
+  <!------SEARCH SECTION SEARCH SECTION SEARCH SECTION ------>
+
+  <div class="width-100 banner-section">
+    <div class="container1">
+      <div class="search-sect">
+        <input type="text" class="search-textbox" placeholder="Search University">
+      </div>
+      <div class="search-sect">
+        <input type="text" class="search-textbox" placeholder="Select Domain">
+        <i class="fa fa-life-ring icons" aria-hidden="true"></i>
+      </div>
+      <div class="search-sect">
+        <input type="text" class="search-textbox" placeholder="All categories">
+        <i class="fa fa-caret-down icons" aria-hidden="true"></i>
+      </div>
+
+      <div class="search-sect">
+        <button class="search-button">
+          <i class="fa fa-search " aria-hidden="true"></i> Search Here </button>
+      </div>
+    </div>
+  </div>
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link href="img/favicon.ico" rel="icon">
+  
+      <!-- Google Web Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+  
+      <!-- Font Awesome -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  
+      <!-- Libraries Stylesheet -->
+      <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  
+      <!-- Customized Bootstrap Stylesheet -->
+      <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+      <div class="container-fluid py-5">
+          <div class="container pt-5 pb-3">
+              <div class="text-center mb-5">
+                  <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Subjects</h5>
+                  <h1>Explore Top Subjects</h1>
+              </div>
+              <div class="row">
+                  <div class="col-lg-3 col-md-6 mb-4">
+                      <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                          <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                          <a class="cat-overlay text-white text-decoration-none" href="">
+                              <h4 class="text-white font-weight-medium">Web Design</h4>
+                              <span>100 Courses</span>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-4">
+                      <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                          <img class="img-fluid" src="img/cat-2.jpg" alt="">
+                          <a class="cat-overlay text-white text-decoration-none" href="">
+                              <h4 class="text-white font-weight-medium">Development</h4>
+                              <span>100 Courses</span>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-4">
+                      <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                          <img class="img-fluid" src="img/cat-3.jpg" alt="">
+                          <a class="cat-overlay text-white text-decoration-none" href="">
+                              <h4 class="text-white font-weight-medium">Game Design</h4>
+                              <span>100 Courses</span>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-4">
+                      <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                          <img class="img-fluid" src="img/cat-4.jpg" alt="">
+                          <a class="cat-overlay text-white text-decoration-none" href="">
+                              <h4 class="text-white font-weight-medium">Apps Design</h4>
+                              <span>100 Courses</span>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-4">
+                      <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                          <img class="img-fluid" src="img/cat-5.jpg" alt="">
+                          <a class="cat-overlay text-white text-decoration-none" href="">
+                              <h4 class="text-white font-weight-medium">Marketing</h4>
+                              <span>100 Courses</span>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-4">
+                      <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                          <img class="img-fluid" src="img/cat-6.jpg" alt="">
+                          <a class="cat-overlay text-white text-decoration-none" href="">
+                              <h4 class="text-white font-weight-medium">Research</h4>
+                              <span>100 Courses</span>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-4">
+                      <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                          <img class="img-fluid" src="img/cat-7.jpg" alt="">
+                          <a class="cat-overlay text-white text-decoration-none" href="">
+                              <h4 class="text-white font-weight-medium">Content Writing</h4>
+                              <span>100 Courses</span>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-4">
+                      <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                          <img class="img-fluid" src="img/cat-8.jpg" alt="">
+                          <a class="cat-overlay text-white text-decoration-none" href="">
+                              <h4 class="text-white font-weight-medium">SEO</h4>
+                              <span>100 Courses</span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Category Start -->
+  
+  
+      <!-- Courses Start -->
+      <div class="container-fluid py-5">
+          <div class="container py-5">
+              <div class="text-center mb-5">
+                  <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px; color: #176B87;">Courses</h5>
+                  <h1>Our Popular Courses</h1>
+              </div>
+              <div class="row">
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="rounded overflow-hidden mb-2">
+                          <img class="img-fluid" src="img/course-1.jpg" alt="">
+                          <div class="bg-secondary p-4">
+                              <div class="d-flex justify-content-between mb-3">
+                                  <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                  <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                              </div>
+                              <a class="h5" href="">Web design & development courses for beginner</a>
+                              <div class="border-top mt-4 pt-4">
+                                  <div class="d-flex justify-content-between">
+                                      <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                      <h5 class="m-0">Free</h5>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="rounded overflow-hidden mb-2">
+                          <img class="img-fluid" src="img/course-2.jpg" alt="">
+                          <div class="bg-secondary p-4">
+                              <div class="d-flex justify-content-between mb-3">
+                                  <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                  <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                              </div>
+                              <a class="h5" href="">C++ for Beginners</a>
+                              <div class="border-top mt-4 pt-4">
+                                  <div class="d-flex justify-content-between">
+                                      <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                      <h5 class="m-0">Rs.200</h5>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="rounded overflow-hidden mb-2">
+                          <img class="img-fluid" src="img/course-3.jpg" alt="">
+                          <div class="bg-secondary p-4">
+                              <div class="d-flex justify-content-between mb-3">
+                                  <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                  <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                              </div>
+                              <a class="h5" href="">Python for Beginners</a>
+                              <div class="border-top mt-4 pt-4">
+                                  <div class="d-flex justify-content-between">
+                                      <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                      <h5 class="m-0">Free</h5>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="rounded overflow-hidden mb-2">
+                          <img class="img-fluid" src="img/course-4.jpg" alt="">
+                          <div class="bg-secondary p-4">
+                              <div class="d-flex justify-content-between mb-3">
+                                  <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                  <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                              </div>
+                              <a class="h5" href="">C for beginner</a>
+                              <div class="border-top mt-4 pt-4">
+                                  <div class="d-flex justify-content-between">
+                                      <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                      <h5 class="m-0">Rs.300</h5>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="rounded overflow-hidden mb-2">
+                          <img class="img-fluid" src="img/course-5.jpg" alt="">
+                          <div class="bg-secondary p-4">
+                              <div class="d-flex justify-content-between mb-3">
+                                  <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                  <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                              </div>
+                              <a class="h5" href="">Java for beginners</a>
+                              <div class="border-top mt-4 pt-4">
+                                  <div class="d-flex justify-content-between">
+                                      <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                      <h5 class="m-0">Free</h5>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="rounded overflow-hidden mb-2">
+                          <img class="img-fluid" src="img/course-6.jpg" alt="">
+                          <div class="bg-secondary p-4">
+                              <div class="d-flex justify-content-between mb-3">
+                                  <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                  <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                              </div>
+                              <a class="h5" href="">Java Script for beginners</a>
+                              <div class="border-top mt-4 pt-4">
+                                  <div class="d-flex justify-content-between">
+                                      <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                      <h5 class="m-0">Free</h5>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+  </html>
+
+  
+
+</body>
